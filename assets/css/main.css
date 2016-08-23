@@ -2208,9 +2208,9 @@
 			}
 
 		#header nav {
-			letter-spacing: 0.075em;
+			letter-spacing: 0.00em;
 			position: absolute;
-			right: 1.5em;
+			right: 0.3em;
 			text-transform: uppercase;
 			top: 0.75em;
 		}
@@ -2292,7 +2292,7 @@
 		}
 
 			#header.alt nav {
-				right: 2.5em;
+				right: 0.3em;
 				top: 1.75em;
 			}
 
@@ -2967,9 +2967,22 @@
 				}
 
 		/* Header */
+			#header.alt nav {
+				right:0em;
+			}
+
+			#header nav {
+				letter-spacing: -0.02em;
+    			position: absolute;
+    			right: 0.5em;
+    			text-transform: uppercase;
+    			top: 0.75em;
+
+			}
 
 			#header nav ul li {
-				margin-left: 1em;
+				    margin-left: 0em;
+				    font-size: 90%;
 			}
 
 		/* Banner */
@@ -2994,6 +3007,24 @@
 	}
 
 /* Narrow */
+
+	@media screen and (max-width: 1270px) {
+		/* Header */
+			#header.alt nav {
+				right:0.5em;
+			}
+
+		    #header nav{
+		    	letter-spacing: 0.02em;
+		    	right: 0.5em;
+		    }
+
+			#header nav ul li {
+				margin-left: -0.5em;
+				font-size: 95%;
+			}
+	}
+
 
 	@media screen and (max-width: 980px) {
 
@@ -3053,6 +3084,22 @@
 				background-size: 15em, 15em, auto, cover;
 			}
 
+		/* Header */
+			#header.alt nav {
+				right:0em;
+			}
+
+		    #header nav{
+		    	letter-spacing: 0.02em;
+		    	right: 5em;
+		    }
+
+			#header nav ul li {
+				margin-left: -0.5em;
+				font-size: 85%;
+			}
+
+
 		/* Main */
 
 			#main {
@@ -3074,7 +3121,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 840px) {
+	@media screen and (max-width: 963px) {
 
 		/* Basic */
 
