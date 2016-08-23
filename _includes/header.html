@@ -1,0 +1,83 @@
+			<!-- Header -->
+					<h1 id="logo"><a href="../">USC NAI <span>Theater Workshop</span></a></h1>
+					<nav id="nav">
+						<ul>
+							{% if page.active == "home" %}
+							<li class="current"><a href="../">Welcome</a></li>
+							{% else %}
+							<li><a href="../">Welcome</a></li>
+							{% endif %}
+
+							{% if page.active == "about" %}
+							<li class="current"><a href="../about/">About</a></li>
+							{% else %}
+							<li><a href="../about/">About</a></li>
+							{% endif %}
+
+							{% if page.active == "media" %}
+							<li class="current"><a href="../media/">Media & Links</a></li>
+							{% else %}
+							<li><a href="../media/">Media & Links</a></li>
+							{% endif %}
+
+							<li><a href="https://naidickens.blogspot.com" target="_blank">Nai @ Dickens</a></li>
+
+							{% if page.active == "productions" %}
+							<li class="current submenu">
+								<a href="../productions/">Productions</a>
+								<!--
+								<ul>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Productions</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							-->
+							{% else %}
+							<li class="submenu">
+								<a href="../productions/">Productions</a>
+								<!--
+								<ul>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Productions</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							-->
+							</li>
+							{% endif %}
+
+							{% if page.active == "students" %}
+							<li class="current"><a href="../students/">Students & Parents</a></li>
+							{% else %}
+							<li><a href="../students/">Students & Parents</a></li>
+							{% endif %}
+
+							{% if page.active == "sub" %}
+							<li class="current"><a href="../subscribe/" class="button special">Subscribe</a></li>
+							{% else %}
+							<li><a href="../subscribe/" class="button special">Subscribe</a></li>
+							{% endif %}
+
+						</ul>
+					</nav>
