@@ -4,3 +4,9 @@
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+		
+		{% if page.active == "productions" %}
+		<link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+		<script src="../assets/js/modernizr-custom.js"></script>
+		{% endif %}

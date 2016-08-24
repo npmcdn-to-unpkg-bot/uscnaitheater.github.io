@@ -15,15 +15,27 @@
 							{% endif %}
 
 							{% if page.active == "media" %}
-							<li class="current"><a href="../media/">Media & Links</a></li>
+							<li class="current submenu">
+								<a href="../media/">Media & Links</a>
+								<ul>
+									<li><a href="../media/midsummer-press">Bottom's Dream - Press Release</a></li>
+									<li><a href="../media/dombey-press">Dickens Day & Night - Press Release</a></li>
+								</ul>
+							</li>
 							{% else %}
-							<li><a href="../media/">Media & Links</a></li>
+							<li class="submenu">
+								<a href="../media/">Media & Links</a>
+								<ul>
+									<li><a href="../media/midsummer-press">Bottom's Dream - Press</a></li>
+									<li><a href="../media/dombey-press">Dickens - Press</a></li>
+								</ul>
+							</li>
 							{% endif %}
 
 							<li><a href="https://naidickens.blogspot.com" target="_blank">Nai @ Dickens</a></li>
 
 							{% if page.active == "productions" %}
-							<li class="current submenu">
+							<li class="current">
 								<a href="../productions/">Productions</a>
 								<!--
 								<ul>
@@ -44,7 +56,7 @@
 								</ul>
 							-->
 							{% else %}
-							<li class="submenu">
+							<li>
 								<a href="../productions/">Productions</a>
 								<!--
 								<ul>
