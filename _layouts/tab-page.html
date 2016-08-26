@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include css_header.html %}
+	</head>
+	<body>
+		<header id="header">
+					{% include header.html %}
+		</header>
+
+		<article id="main">
+			<header class="special container">
+				<span class="icon fa-heart"></span>
+				<h2>{{ page.no_header_header_text }}</h2>
+			</header>
+
+	
+				<div id="tabs" class="tabs">
+					<nav>
+						<ul>
+							<li><a href="#section-1" class="icon-camera"><span>Gallery</span></a></li>
+							<li><a href="#section-2" class="icon-about"></span><span> About</span></a></li>
+						</ul>
+					</nav>
+					<div class="content">
+						<section id="section-1">
+							{{ content }}
+						</section>
+						<section id="section-2">
+							<div class="mediabox">
+							<p>
+								{{ page.description_tab }}
+							</p>
+						</div>
+						</section>
+					</div><!-- /content -->
+
+				</div><!-- /tabs -->
+
+		<!--/section -->
+
+		</article>
+
+		<footer id="footer">
+			{% include footer.html %}
+		</footer>
+
+		{% include scripts.html %}
+	</body>
+</html>

@@ -72,3 +72,10 @@
 		})();
 	</script>
 	{% endif %}
+
+	{% if page.active == "productions-page" %}
+	<script src="../assets/js/cbpFWTabs.js"></script>
+	<script>
+		new CBPFWTabs( document.getElementById( 'tabs' ) );
+	</script>
+	{% endif %}
