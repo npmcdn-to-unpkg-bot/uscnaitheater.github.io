@@ -35,12 +35,18 @@
 							<li><a href="https://naidickens.blogspot.com" target="_blank">Nai @ Dickens</a></li>
 
 							{% if page.active == "productions" %}
-							<li class="current">
+							<li class="current submenu">
 								<a href="../productions/">Productions</a>
+								<ul>
+									<li><a href="../productions/dombey">Dombey & Son</a></li>
+								</ul>
 							</li>
 							{% else %}
-							<li>
+							<li class="submenu">
 								<a href="../productions/">Productions</a>
+								<ul>
+									<li><a href="../productions/dombey">Dombey & Son</a></li>
+								</ul>
 							</li>
 							{% endif %}
 
